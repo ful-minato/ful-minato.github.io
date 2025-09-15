@@ -1,1 +1,0 @@
-# ful-minato.github.io
