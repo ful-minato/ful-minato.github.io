@@ -1,4 +1,9 @@
-
+body {
+  font-family:Georgia,serif;
+  margin:20px;
+  background-color: #fff8dc;
+  color: #333;
+}
 
 
 .footer {
