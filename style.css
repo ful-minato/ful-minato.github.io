@@ -1,16 +1,399 @@
-body {
-  font-family:Georgia,serif;
-  margin:20px;
-  background-color: #fff8dc;
-  color: #333;
+/* Reset e impostazioni base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f5f0;
+}
 
-.footer {
-  background-color: grey;
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  bottom: 0;  
+/* Header e navigazione */
+header {
+    background-color: #8B4513;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover, .menu a.active {
+    background-color: #A0522D;
+}
+
+/* Contenuto principale */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #8B4513;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #A0522D;
+    margin: 1.5rem 0 1rem;
+}
+
+/* Sezione hero */
+.hero {
+    background-color: #D2B48C;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    color: #8B4513;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #A0522D;
+}
+
+/* Sezione specialità */
+.specialita-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.specialita-item {
+    flex: 1 1 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.specialita-item:hover {
+    transform: translateY(-5px);
+}
+
+.specialita-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.specialita-item h3 {
+    padding: 0 15px;
+    margin-top: 15px;
+}
+
+.specialita-item p {
+    padding: 0 15px 15px;
+}
+
+/* Sezione info rapide */
+.info-rapide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 20px;
+}
+
+.info-item {
+    flex: 1 1 250px;
+    background-color: #D2B48C;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-item h3 {
+    color: #8B4513;
+}
+
+/* Tabelle menu */
+.menu-section {
+    margin-bottom: 3rem;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.menu-table th, .menu-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-table th {
+    background-color: #8B4513;
+    color: white;
+}
+
+.menu-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.menu-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Liste menu */
+.menu-list {
+    list-style: none;
+}
+
+.menu-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #ddd;
+}
+
+.menu-list strong {
+    color: #8B4513;
+    font-size: 1.1rem;
+}
+
+.menu-list p {
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Storia */
+.storia-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.storia-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.storia-content ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1.5rem;
+}
+
+.team-member {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Contatti */
+.contatti-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+.contatti-info {
+    flex: 1 1 400px;
+}
+
+.contatti-info ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contatti-info a {
+    color: #8B4513;
+    text-decoration: none;
+}
+
+.contatti-info a:hover {
+    text-decoration: underline;
+}
+
+.prenotazione-form {
+    flex: 1 1 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.mappa {
+    margin-top: 2rem;
+}
+
+.mappa-placeholder {
+    background-color: #e9e9e9;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section h3 {
+    color: #D2B48C;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    margin-bottom: 5px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu li {
+        margin: 5px 0;
+    }
+    
+    .specialita-container, .info-rapide, .team-gallery, .contatti-container, .footer-content {
+        flex-direction: column;
+    }
+    
+    .hero {
+        padding: 2rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
