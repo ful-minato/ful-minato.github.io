@@ -1,27 +1,100 @@
 <!DOCTYPE html>
-<html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Riga per rendere il sito responsive -->
     <title>Pizzeria Grande Piramide d'Egitto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Riga per linkare il file css -->
+    <link rel="icon" href="immagini/logo.jpeg" type="image/x-icon"> <!-- Riga per fare l'icona di fianco al titolo -->
 </head>
 <body>
-    <h1 style="text-align:center;color: #8B4513;">🍕 Pizzeria Grande Piramide d'Egitto 🍕</h1>
-    <p style="text-align:center;">Benvenuto nel nostro ristorante di autentiche pizze egizie!</p>
-    <hr>
-    <h2>Specialità</h2>
-    <ul>
-        <li>Pizza Margherita a forma di piramide</li>
-        <img src="" alt="">
-        <li>Zucchine ripiene come il Nilo</li>
-        <li>Pizza con spezie egizie</li>
-    </ul>
-    <h2>Orari e Posizione</h2>
-    <p>Ci trovi in via delle Piramidi, nel cuore dell'Egitto cittadino.</p>
-    <p>Orari di apertura: 12:00 - 23:00</p>
-    <h2>Contattaci</h2>
-    <p>Per prenotazioni: <a href="vuoto">+39 111 222 3344</a></p>
-    <div class = "footer">
-        <p>Copyright 2025</p>
-    </div>
+    <!-- Header, main e footer usati per organizzare il css della pagina -->
+    <header>
+        <div class="logo-container">
+            <img src="immagini/logo.jpeg" alt="Logo Pizzeria Grande Piramide d'Egitto" class="logo">
+            <h1>Pizzeria Grande Piramide d'Egitto</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="storia.html">La Nostra Storia</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="hero">
+            <h2>Benvenuto nel nostro ristorante di autentiche pizze egizie!</h2>
+            <p>Scopri i sapori unici delle nostre pizze ispirate all'antico Egitto</p>
+            <a href="menu.html" class="cta-button">Scopri il Menu</a>
+        </div>
+
+        <div class="specialita">
+            <h2>Le Nostre Specialità</h2>
+            <div class="specialita-container">
+                <div class="specialita-item">
+                    <img src="immagini/pizza_triangolo.jpeg" alt="Pizza Margherita a forma di piramide">
+                    <h3>Pizza Margherita a forma di piramide</h3>
+                    <p>La nostra pizza classica con una forma unica che ricorda le grandi piramidi egiziane.</p>
+                </div>
+                <div class="specialita-item">
+                    <img src="immagini/pizza_nilo.jpeg" alt="Pizza alle zucchine con la forma del Nilo">
+                    <h3>Pizza alle zucchine con la forma del Nilo</h3>
+                    <p>Deliziose zucchine ripiene di ingredienti freschi, ispirate al fertile fiume Nilo.</p>
+                </div>
+                <div class="specialita-item">
+                    <img src="immagini/pizza_spezie.jpeg" alt="Pizza con spezie egizie">
+                    <h3>Pizza con spezie egizie</h3>
+                    <p>Una pizza aromatizzata con un mix esclusivo di spezie dell'antico Egitto.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-rapide">
+            <div class="info-item">
+                <h3>Orari di Apertura</h3>
+                <p>Lunedì - Domenica: 12:00 - 23:00</p>
+            </div>
+            <div class="info-item">
+                <h3>Posizione</h3>
+                <p>Via delle Piramidi, 123 - Egitto Cittadino</p>
+            </div>
+            <div class="info-item">
+                <h3>Prenotazioni</h3>
+                <p>Telefono: <a href="tel:+391112223344">+39 111 222 3344</a></p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Pizzeria Grande Piramide d'Egitto</h3>
+                <p>Autentiche pizze ispirate all'antico Egitto</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <p>Via delle Piramidi, 123</p>
+                <p>Tel: +39 111 222 3344</p>
+                <p>Email: info@pizzeriagrandepiramide.it</p>
+            </div>
+            <div class="footer-section">
+                <h3>Seguici</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Pizzeria Grande Piramide d'Egitto - Tutti i diritti riservati</p>
+            <p></p>
+        </div>
+    </footer>
+
 </body>
 </html>
