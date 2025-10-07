@@ -38,6 +38,7 @@ header h1 {
     text-align: center;
 }
 
+
 .menu {
     display: flex;
     justify-content: center;
@@ -310,10 +311,6 @@ h3 {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.mappa {
-    margin-top: 2rem;
 }
 
 .mappa-placeholder {
